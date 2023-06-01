@@ -7,7 +7,7 @@ export function setupAPIClient(ctx = undefined){
     let cookies = parseCookies(ctx);
 
     const api = axios.create({
-        baseURL: 'https://currency-xi.vercel.app/',
+        baseURL: 'https://backend-pizzaria.vercel.app',
         headers: {
             Authorization: `Bearer ${cookies['@nextauth.token']}`
         }
